@@ -6,6 +6,9 @@
     "printer-shop": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "style": "less"
+        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -27,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/styles.less"
             ],
             "scripts": []
           },
@@ -65,6 +68,9 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "port": 8000
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
@@ -94,7 +100,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/styles.less"
             ],
             "scripts": []
           }

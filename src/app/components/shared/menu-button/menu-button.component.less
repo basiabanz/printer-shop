@@ -1,0 +1,40 @@
+@import '../../../../styles/variables.less';
+
+.menu-button {
+    border: none;
+    background-color: transparent;
+    color: @font-primary;
+    cursor: pointer;
+    font-size: @font-size-m;
+    padding: 16px;
+    transition: all 0.5s;
+    font-weight: 600;
+    // text-transform: uppercase;
+    vertical-align: middle;
+    span {
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+        &::after {
+            content: '\00bb';
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            position: absolute;
+            opacity: 0;
+            top: -2px;
+            right: -20px;
+            transition: 0.5s;
+            width: 8px;
+        }
+    }
+    &:hover span {
+        padding-right: 24px;
+        color: @font-secondary;
+        &::after {
+            opacity: 1;
+            right: 0;
+            color: @font-secondary;
+        }
+    }
+}

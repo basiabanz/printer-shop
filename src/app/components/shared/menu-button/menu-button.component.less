@@ -2,19 +2,20 @@
 
 .menu-button {
     border: none;
-    background-color: #f9e45B;;
-    border: 1px solid #f9e45B;;
-    border-radius: 8px;
-    color: @font-primary;
+    background-color: @background-primary;
+    border: 1px solid @font-secondary;
+    font-weight: 600;
+    color: @font-secondary;
     cursor: pointer;
-    font-size: @font-size-m;
+    font-size: @font-size-xs;
+    line-height: 14px;
     padding: 16px;
     transition: all 0.5s;
     font-weight: 600;
     // text-transform: uppercase;
     vertical-align: middle;
     &:hover {
-        background-color: yellow;
+        background-color: @font-secondary;
     }
     span {
         cursor: pointer;
@@ -35,11 +36,11 @@
     }
     &:hover span {
         padding-right: 24px;
-        color: @font-secondary;
+        color: @font-teritiary;
         &::after {
             opacity: 1;
             right: 0;
-            color: @font-secondary;
+            color: @font-teritiary;
         }
     }
 }

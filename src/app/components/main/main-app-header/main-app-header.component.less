@@ -5,15 +5,26 @@
 .menu-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 24px;
     .items-container {
         display: flex;
         justify-content: end;
-        gap: 24px;
         padding: 5px 25px;
+        gap: 24px;
+
+        @media (max-width: 544px) {
+            gap: 8px;
+        }
     }
     .logo {
-        color: @font-teritiary;
+        color: @font-primary;
+        font-size: @font-size-m;
+        background-image: url(../../../../assets/images/paint-brush.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-weight: bold;
         padding: 24px;
         text-transform: uppercase;
     }

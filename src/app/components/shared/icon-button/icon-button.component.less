@@ -1,0 +1,23 @@
+@import '../../../../styles/variables.less';
+
+.menu-button {
+    border: 1px solid @font-secondary;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        background-color: @background-primary;
+        color: @font-secondary;
+        font-size: @font-size-xs;
+        &:hover {
+            background-color: @font-secondary;
+            color: @font-teritiary;
+        }
+    }
+}

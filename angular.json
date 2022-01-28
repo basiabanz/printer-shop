@@ -30,9 +30,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/styles.less"
+              "src/styles/styles.less",
+              "./node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {

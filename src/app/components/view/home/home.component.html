@@ -1,15 +1,18 @@
 
 <div class="home-container">
-    <div class="home-text">
-        <span class="introduction">Hello, my name is Kamil.</span>
-         <span>I provide 3d print which can simplify your life.</span>
-    </div>
+    <p class="home-text" id="text">
+        <span>Hello, my name is <span>Kamil</span>.</span>
+         <span>I provide <span>3D</span> print which can simplify your life.</span>
+         <span>Contact me and print your dreams.
+            <icon-button (click)="contactMe()" [icon]="'bi bi-telephone-outbound-fill'"></icon-button>
+         </span>
+    </p>
     <div class="home-image">
         <div class="img-container">
         </div>
         <img src="../../../../assets/images/quattro-yellow.png">
-        <img class="second" src="../../../../assets/images/adapters.png">
-        <img class="third" src="../../../../assets/images/adapters-blue.png">
-
+        <img src="../../../../assets/images/adapters.png">
+        <!-- <img src="../../../../assets/images/quattro-red.png"> -->
+        <img src="../../../../assets/images/adapters-blue.png">
     </div>
 </div>

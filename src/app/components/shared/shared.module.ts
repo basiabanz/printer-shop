@@ -2,10 +2,12 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuButtonComponent } from './menu-button/menu-button.component';
+import { IconButtonComponent } from './icon-button/icon-button.component';
 
 @NgModule({
   declarations: [
-    MenuButtonComponent
+    MenuButtonComponent,
+    IconButtonComponent
   
   ],
   imports: [
@@ -13,7 +15,8 @@ import { MenuButtonComponent } from './menu-button/menu-button.component';
       RouterModule,
   ],
   exports: [
-    MenuButtonComponent
+    MenuButtonComponent,
+    IconButtonComponent
   ],
   providers: [],
 })

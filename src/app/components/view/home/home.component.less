@@ -1,143 +1,140 @@
-@import '../../../../styles/variables.less';
+// @import '../../../../styles/variables.less';
 
+// .home-container {
+//   display: flex;
+//   height: 100%;
+//   padding: 0 4vw;
+//   align-items: center;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+//   overflow-y: auto;
+//   overflow-x: hidden;
+//   @media all and (max-width: 1580px) {
+//     justify-content: center;
+//   }
 
-.home-container {
-  display: flex;
-  height: 100%;
-  padding: 0 4vw;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  overflow-y: auto;
-  overflow-x: hidden;
-  @media all and (max-width: 1580px) {
-    justify-content: center;
-  }
+//   .home-text {
+//     font-size: @font-size-xl;
+//     color: @font-primary;
+//     display: flex;
+//     flex-direction: column;
+//     overflow: hidden;
+//     padding: 0 32px 32px 0;
+//     border-right: 3px solid @font-secondary;
+//      span {
+//       animation: 4s slide-right ease-out forwards;
+//     }
+//     border-bottom:  3px solid @font-secondary;
+//     @media all and (max-width: 800px) {
+//       text-align: center;
+//     }
+//     & span:nth-of-type(1) {
+//       font-weight: 700;
+//       font-size:@font-size-max;
+//       padding-bottom: 16px;
+//       & span:nth-of-type(1) {
+//         text-transform: uppercase;
+//         color: @font-secondary;
+//       }
+//     }
+//     & span:nth-of-type(2) {
+//       padding-bottom: 12px;
+//       & span:nth-of-type(1) {
+//         text-transform: uppercase;
+//         color: @font-secondary;
+//       }
+//     }
+//     & span:nth-of-type(3) {
+//       font-size: @font-size-l;
+//       display: flex;
+//       align-items: center;
+//       gap: 16px;
+//       @media all and (max-width: 800px) {
+//         justify-content: center;
+//       }
+//     }
+//   }
 
-  .home-text {
-    font-size: @font-size-xl;
-    color: @font-primary;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 0 32px 32px 0;
-    border-right: 3px solid @font-secondary;
-     span {
-      animation: 4s slide-right ease-out forwards;
-    }
-    border-bottom:  3px solid @font-secondary;
-    @media all and (max-width: 800px) {
-      text-align: center;
-    }
-    & span:nth-of-type(1) {
-      font-weight: 700;
-      font-size:@font-size-max;
-      padding-bottom: 16px;
-      & span:nth-of-type(1) {
-        text-transform: uppercase;
-        color: @font-secondary;
-      }
-    }
-    & span:nth-of-type(2) {
-      padding-bottom: 12px;
-      & span:nth-of-type(1) {
-        text-transform: uppercase;
-        color: @font-secondary;
-      }
-    }
-    & span:nth-of-type(3) {
-      font-size: @font-size-l;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      @media all and (max-width: 800px) {
-        justify-content: center;
-      }
-    }
-  }
+//   .home-image {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+//     @media all and (max-width: 1290px) {
+//       height: 100%;
+//       width: 100%;
+//     }
 
-  .home-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    @media all and (max-width: 1290px) {
-      height: 100%;
-      width: 100%;
-    }
+//     @media not all and (max-width: 1290px) {
+//       width: 50%;
+//     }
+//     .img-container {
+//       border-radius: 50%;
+//       background-color: @background-secondary;
+//       min-width: 400px;
+//       min-height: 400px;
+//       display: flex;
+//       background: radial-gradient(circle at 100px 200px, @border-primary, @background-primary);
+//       box-shadow: 0 0 50px 3px @font-teritiary inset;
+//       animation: spin 6s linear infinite;
+//     }
+//     img {
+//       position: absolute;
+//       max-width: 100%;
+//       height: auto;
+//       left: 0;
+//       right: 0;
+//       margin-left: auto;
+//       margin-right: auto;
+//       animation-name: multiple-image-crossfade;
+//       animation-timing-function: ease-in-out;
+//       animation-iteration-count: infinite;
+//       animation-duration: 6s;
+//       &:nth-of-type(1) {
+//         animation-delay: 5s;
+//       }
+//       &:nth-of-type(2) {
+//         animation-delay: 3s;
+//       }
+//       &:nth-of-type(3) {
+//         animation-delay: 1s;
+//       }
+//     }
+//   }
+// }
 
-    @media not all and (max-width: 1290px) {
-      width: 50%;
-    }
-    .img-container {
-      border-radius: 50%;
-      background-color: @background-secondary;
-      min-width: 400px;
-      min-height: 400px;
-      display: flex;
-      background: radial-gradient(circle at 100px 200px, @border-primary, @background-primary);
-      box-shadow: 0 0 50px 3px @font-teritiary inset;
-      animation: spin 6s linear infinite;
-    }
-    img {
-      position: absolute;
-      max-width: 100%; 
-      height: auto;
-      left: 0; 
-      right: 0; 
-      margin-left: auto; 
-      margin-right: auto;
-      animation-name: multiple-image-crossfade;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-duration: 6s;
-      &:nth-of-type(1) {
-        animation-delay: 5s;
-      }
-      &:nth-of-type(2) {
-        animation-delay: 3s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: 1s;
-      }
-    }
-  }
-}
+// @keyframes spin {
+//   from {
+//       transform:rotate(0deg);
+//   }
+//   to {
+//       transform:rotate(360deg);
+//   }
+// }
 
-@keyframes spin {
-  from {
-      transform:rotate(0deg);
-  }
-  to {
-      transform:rotate(360deg);
-  }
-}
+// @keyframes multiple-image-crossfade {
+//   0% {
+//     opacity: 0;
+// }
+// 25% {
+//     opacity: 1;
+// }
+// 75% {
+//     opacity: 1;
+// }
+// 100% {
+//     opacity: 0;
+// }
+// }
 
-@keyframes multiple-image-crossfade {
-  0% {
-    opacity: 0;
-}
-25% {
-    opacity: 1;
-}
-75% {
-    opacity: 1;
-}
-100% {
-    opacity: 0;
-}
-}
+// @keyframes slide-right {
+//   from {
+//     transform: translateX(-100%);
+//     opacity: 0;
+//   }
 
-
-
-@keyframes slide-right {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
+//   to {
+//     opacity: 1;
+//     transform: translateX(0%);
+//   }
+// }

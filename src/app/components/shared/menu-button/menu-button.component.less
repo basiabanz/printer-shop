@@ -2,10 +2,11 @@
 
 .menu-button {
     border: none;
-    background-color: @background-primary;
-    border: 1px solid @font-secondary;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid @yellow;
     font-weight: 600;
-    color: @font-secondary;
+    color: @yellow;
     cursor: pointer;
     font-size: @font-size-xs;
     line-height: 14px;
@@ -15,7 +16,7 @@
     // text-transform: uppercase;
     vertical-align: middle;
     &:hover {
-        background-color: @font-secondary;
+        background-color: @yellow-hover;
     }
     span {
         cursor: pointer;
@@ -36,11 +37,11 @@
     }
     &:hover span {
         padding-right: 24px;
-        color: @font-teritiary;
+        color: @black;
         &::after {
             opacity: 1;
             right: 0;
-            color: @font-teritiary;
+            color: @black;
         }
     }
 }

@@ -1,10 +1,12 @@
 <div class="menu-container">
-    <div class="logo">
-        KAMIL KLĘCZAR
-    </div>
+    <div class="logo">KAMIL KLĘCZAR</div>
     <div class="items-container">
         <div *ngFor="let item of menuItems">
             <menu-button (click)="changeSite(item)" [buttonText]="item.name"></menu-button>
         </div>
+    </div>
+    <div class="basket-container">
+        <icon-button [icon]="'bi bi-basket'"></icon-button>
+        <!-- <i class="bi bi-basket"></i> -->
     </div>
 </div>

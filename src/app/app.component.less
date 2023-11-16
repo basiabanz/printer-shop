@@ -1,31 +1,39 @@
 @import '../styles/variables.less';
 
-.router-outlet-container {
-    width: 100%;
-    height: 100%;
+.main-container {
     display: flex;
-    flex: 1 1 auto;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
     overflow: hidden;
 
-    .main-view-port {
-        position: relative;
+    .router-outlet-container {
         width: 100%;
         height: 100%;
+        display: flex;
+        flex: 1 1 auto;
         overflow: hidden;
 
-        .main-view-port-content {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow-y: auto;
-            @media (min-width: 992px) {
-                overflow-x: hidden;
-            }
-        }
-    }
+        // .main-view-port {
+        //     position: relative;
+        //     width: 100%;
+        //     height: 100%;
+        //     overflow: hidden;
 
-    // .main-menu {
-    //   position: relative;
-    //   min-width: 80px;
-    // }
+        //     .main-view-port-content {
+        //         position: relative;
+        //         width: 100%;
+        //         height: 100%;
+        //         overflow-y: auto;
+        //         @media (min-width: 992px) {
+        //             overflow-x: hidden;
+        //         }
+        //     }
+        // }
+
+        // .main-menu {
+        //   position: relative;
+        //   min-width: 80px;
+        // }
+    }
 }

@@ -5,27 +5,26 @@ import { ContactComponent } from './components/view/contact/contact.component';
 import { HomeComponent } from './components/view/home/home.component';
 import { ItemsComponent } from './components/view/items/items.component';
 
-const routes: Routes = [
+export const routes: Routes = [
     {
-        path: '', redirectTo: '/home', pathMatch: 'full'
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
     },
-    { 
-        path: 'home', component: HomeComponent 
+    {
+        path: 'home',
+        component: HomeComponent
     },
-    { 
-        path: 'about', component: AboutComponent 
+    {
+        path: 'work',
+        component: AboutComponent
     },
-    { 
-        path: 'myItems', component: ItemsComponent 
+    {
+        path: 'shop',
+        component: ItemsComponent
     },
-    { 
-        path: 'contact', component: ContactComponent 
+    {
+        path: 'contact',
+        component: ContactComponent
     }
 ];
-
-@NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
-})
-
-export class AppRoutingModule { }

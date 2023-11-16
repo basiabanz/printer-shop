@@ -8,8 +8,8 @@ describe('IconButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IconButtonComponent ]
-    })
+    imports: [IconButtonComponent]
+})
     .compileComponents();
   });
 

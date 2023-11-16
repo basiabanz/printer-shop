@@ -4,9 +4,10 @@ import { MenuItemModel } from 'src/app/models/menuItemModel';
 import { NavigationService } from '../../services/navigation.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.less']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.less'],
+    standalone: true
 })
 export class HomeComponent implements OnInit {
 
